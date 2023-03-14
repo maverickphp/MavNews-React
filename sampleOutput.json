@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-
-export class NewsItem extends Component {
-  articles = [
+{
+    "status": "ok",
+    "totalResults": 36,
+    "articles": [
     {
     "source": {
     "id": "cnn",
@@ -263,31 +263,4 @@ export class NewsItem extends Component {
     "content": null
     }
     ]
-      constructor(){
-          super();
-          console.log("Hey im constructor from NewsItem Comp")
-          this.state={
-            articles:this.articles,
-            loading: false
-            
-
-          }
-  }
-  render() {
-   let {title, description, imageURL, newsURL} = this.props;
-    return (
-      <div>
-        <div className="card" style={{width: "18rem"}}>
-  <img src={imageURL} className="card-img-top" alt="..."/>
-  <div className="card-body">
-    <h5 className="card-title">{title}</h5>
-    <p className="card-text">{description}</p>
-    <a href="/newsdetail" className="btn btn-sm btn-primary">Read More</a>
-  </div>
-</div>
-      </div>
-    )
-  }
-}
-
-export default NewsItem
+    }
